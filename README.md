@@ -182,25 +182,28 @@ the application, not a development tool.
 
 ## Project Context
 
-This project is part of a broader personal learning roadmap through Data Science,
-ML Engineering, and Agentic AI including:
+This project is **Project 4** in a broader personal systems engineering and AI
+learning stack, including:
 
-* Python-based automation and agentic AI systems
-* Linux system architecture and infrastructure design
-* SQL, database design, and data pipeline engineering
-* Applied machine learning and LLM-integrated pipelines
+* **Project 0:** Local development infrastructure & backup system (SSH, rsync, Git mirroring)
+* **Project 1:** AI-assisted research digester (arXiv + Gemini pipeline)
+* **Project 2:** Linux system inspection and analysis tooling
+* **Project 3:** Log Analyzer — Pandas-based log parsing and AI summarization
+* **Project 4:** SQL Agent (this project) — agentic natural language querying over SQLite
 
-The goal is to bridge theoretical foundations in mathematics and machine learning
-with practical systems engineering and production-style automation workflows.
+This roadmap is a flexible, evolving experimental playground for learning rather
+than a fixed plan, bridging mathematical and machine learning foundations with
+practical systems engineering and production-style automation workflows.
 
 ---
 
 **Connections to other projects:**
-- Inherits git workflow and security framework from `linux-system-inspector` (Project 1)
-- Inherits log parsing logic and Gemini API integration pattern from `log-analyzer` (Project 2)
+- Inherits git workflow and security framework from `infra-backup-system` (Project 0)
+  and `linux-system-inspector` (Project 2)
+- Inherits log parsing logic and Gemini API integration pattern from `log-analyzer` (Project 3)
 - Extends `log-analyzer` by persisting parsed logs into SQLite and enabling natural language querying
-- Planned: SSH into Acer machine, pull real `/var/log/syslog`, load and query it with this tool
-- Planned: Project 4 will extend the agentic loop pattern introduced here into a Scikit-learn ML pipeline
+- Planned: SSH into the backup server, pull real `/var/log/syslog`, load and query it with this tool
+- Planned: Project 5 will extend the agentic loop pattern introduced here into a ML agentic pipeline
 
 <!--
 - Stretch goal: persistent database mode — instead of repopulating SQLite from the log file
